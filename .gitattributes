@@ -1,0 +1,2 @@
+# Release manifest is byte-exact on every platform; preserve stored line endings.
+* -text

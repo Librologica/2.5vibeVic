@@ -1,0 +1,108 @@
+{
+  "name": "2.5vibeVic",
+  "version": "1.0.0",
+  "date": "2026-09-25",
+  "platform": "Commodore VIC-20 +24KB (RAM blocks 1,2,3)",
+  "cpu": "6502, documented instructions",
+  "backend": "native VIC-I character framebuffer, grid DDA",
+  "graphics": {
+    "mono": [
+      128,
+      96
+    ],
+    "multicolor": [
+      64,
+      96
+    ]
+  },
+  "physicalViewport": [
+    128,
+    96
+  ],
+  "characterCells": [
+    16,
+    12
+  ],
+  "rays": 32,
+  "mapSize": [
+    32,
+    32
+  ],
+  "scenes": [
+    "galleries"
+  ],
+  "runs": [
+    "auto",
+    "interactive"
+  ],
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "documentationLicense": "CC-BY-NC-4.0",
+  "builderSHA256": "89EF521CC210912C96BFD9790F7CC15C6BDF102CEB41C043E4827BBA3D942C50",
+  "backends": {
+    "mono": {
+      "generatorSHA256": "688FA4FEA85D77508AB6386684767910CF8BCCEEBB9CE87EEE8D52145EC0E918",
+      "modelSHA256": "F20C95778F046769D11CCED344636AD8E0EF8C14D622865EB2864F5CC199854F",
+      "runtimeSHA256": "F819BBF1BAC66D8E06F618D86365007A217F0274B71F8A43E2ACA2D738F32DBF",
+      "edgesSHA256": "8B2CD9C9A0662CCAFD25C660D0EF988B628A8AF454D05A527F582A5C12B97869"
+    },
+    "multicolor": {
+      "generatorSHA256": "A76B09DE588F25D2B4A8E2ADC298F8D0783D54A3B5BE89211D26309F6844F4C4",
+      "modelSHA256": "409F78C8F54423243D3ACE605AEA204C00C4883D4E8B82E4CE6D4F48E124C7EA",
+      "runtimeSHA256": "01BF2E730DF7E4179C2E7C4A65420D850D894D7A4F2547835349BF739C0F83E4",
+      "edgesSHA256": "92E54319BE674A714868764DF2D1D4A7C467E9917A733C22A2A45738B5661C21"
+    }
+  },
+  "sourceTreeSHA256": "D034D9C9FC224C7F2B47955BB68F93425E2544B4B4C5B0F62821117AABC15E40",
+  "sourceTreeHashMethod": "SHA256 of sorted src/ file lines: uppercase SHA256, two spaces, POSIX relative path, LF",
+  "demos": {
+    "demos/galleries-mono-auto.prg": "56D84F064F4EF013B4867823ADD1C36AFCB6AFECD9539FD2396EF2232F176B1D",
+    "demos/galleries-mono-interactive.prg": "C17C9329DE14C3FE4EB19F651289D3D2570B6D49BF362BF452EBBA1FF39EC309",
+    "demos/galleries-multicolor-auto.prg": "374FE4D48C0C2C53255D7A3270D1954E5F90F83AEBF7F20DE25B6EF15FC4BBBB",
+    "demos/galleries-multicolor-interactive.prg": "3E8514F967F687ED8BDB46BB8AF8E7B260B24A1CF75CBDB30B86635AEA4C2048"
+  },
+  "manifest": "MANIFEST.sha256",
+  "manifestScope": "All permanent files except root MANIFEST.sha256 itself",
+  "hardwareQualification": "Not tested on real hardware",
+  "buildTools": {
+    "Python": "3.10+ (qualified 3.13.14)",
+    "64tass": "qualified 1.60.3243"
+  },
+  "nativeEmulators": {
+    "name": "xvic",
+    "version": "VICE 3.10",
+    "standards": [
+      "PAL",
+      "NTSC"
+    ],
+    "stock": true,
+    "RAMExpansionKB": 24
+  },
+  "qualification": {
+    "publicContracts": 14,
+    "CPUModelPoses": 342,
+    "CPUModelRays": 10944,
+    "CPUModelBuffers": 684,
+    "simulationTicks": 8000,
+    "edgeHeightPairs": 4802,
+    "edgeGuardCases": 20,
+    "nativeViews": 544,
+    "physicalCaptures": 8,
+    "paletteCalibrations": 2,
+    "keyboardCases": 20,
+    "pixelDifferences": 0,
+    "joystick": "Code present; physical joystick not tested",
+    "fullTour": "Both graphics modes, PAL/NTSC"
+  },
+  "benchmark": {
+    "method": "20 emulated seconds after 2 seconds warm-up; two repetitions; newly published full views",
+    "mono": {
+      "PAL": 8.15,
+      "NTSC": 7.4
+    },
+    "multicolor": {
+      "PAL": 8.45,
+      "NTSC": 7.65
+    }
+  },
+  "permanentFiles": 81
+}

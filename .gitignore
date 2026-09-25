@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+.venv/
+# Generated builds must live outside this SDK. Public demos are intentional.
